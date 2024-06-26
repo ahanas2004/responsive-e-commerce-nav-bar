@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>voguevault</title>
+  <head>
+  <link rel="icon" href="./voguevault-logo-zip-file/png/logo-no-background only dress.png" width="100" height="100">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <nav>
+    <ul class="sidebar">
+      <li class="hide-sidebar-btn" onclick="hideSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26" ><path d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z"/></svg></a></li>
+      <li><a href="#">settings</a>
+      <ul class="dropdown">
+        <li><a href="#">Profile</a></li>
+        <li><a href="#">Account</a></li>
+        <li><a href="#">Privacy</a></li>
+      </ul>
+    </li>
+    <li><a href="#">Products</a>
+      <ul class="dropdown">
+        <li><a href="#">New Arrivals</a></li>
+        <li><a href="#">Best Sellers</a></li>
+        <li><a href="#">Sale</a></li>
+      </ul>
+    </li>
+    <li><a href="#">About</a>
+      <ul class="dropdown">
+        <li><a href="#">Our Story</a></li>
+        <li><a href="#">Mission</a></li>
+        <li><a href="#">Careers</a></li>
+      </ul>
+    </li>
+    <li><a href="#">Forum</a>
+      <ul class="dropdown">
+        <li><a href="#">Discussions</a></li>
+        <li><a href="#">Events</a></li>
+        <li><a href="#">Community</a></li>
+      </ul>
+    </li>
+    <li><a href="#">Login</a></li>
+  </ul>
+    </ul>
+
+    <ul>
+
+     <li><a href="#"><img src="./voguevault-logo-zip-file/download-removebg-preview.png" alt="Logo" class="logo"></a></li>
+
+    <div class="search-container">
+        <input type="text" placeholder="Search..." class="search-input">
+        <i class="fa-solid fa-magnifying-glass"></i>
+    </div>
+    <li class="hideOnMobile"><a href="#">daii</a>
+      <ul class="dropdown">
+        <li><a href="#">Submenu 1</a></li>
+        <li><a href="#">Submenu 2</a></li>
+        <li><a href="#">Submenu 3</a></li>
+      </ul>
+    </li>
+    <li class="hideOnMobile"><a href="#">Products</a>
+      <ul class="dropdown">
+        <li><a href="#">New Arrivals</a></li>
+        <li><a href="#">Best Sellers</a></li>
+        <li><a href="#">Sale</a></li>
+      </ul>
+    </li>
+    <li class="hideOnMobile"><a href="#">About</a>
+      <ul class="dropdown">
+        <li><a href="#">Our Story</a></li>
+        <li><a href="#">Mission</a></li>
+        <li><a href="#">Careers</a></li>
+      </ul>
+    </li>
+    <li class="hideOnMobile"><a href="#">Forum</a>
+      <ul class="dropdown">
+        <li><a href="#">Discussions</a></li>
+        <li><a href="#">Events</a></li>
+        <li><a href="#">Community</a></li>
+      </ul>
+    </li>
+    <li class="hideOnMobile"><a href="#"><i class="fas fa-user-circle"></i></a></li>
+    <li class="hideOnMobile"><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
+    <li class="menu-button" onclick="showSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z"/></svg></a></li>
+    </ul>
+  </nav>
+
+  <script>
+    function showSidebar(){
+      const sidebar = document.querySelector('.sidebar')
+      sidebar.style.display = 'flex'
+    }
+    function hideSidebar(){
+      const sidebar = document.querySelector('.sidebar')
+      sidebar.style.display = 'none'
+    }
+  </script>
+</body>
+</html>

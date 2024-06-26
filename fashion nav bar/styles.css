@@ -1,0 +1,297 @@
+*{
+    margin: 0;
+    padding: 0;
+  }
+  body{
+    min-height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #dcdcdc;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  nav{
+    background-color: #2d2c2c;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+  }
+  nav ul{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  nav li{
+    height: 60px;
+  }
+  nav a{
+    height: 100%;
+    padding: 0 20px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: rgb(255, 255, 255);
+    font-family: "Bodoni Moda", serif;
+    font-weight:700;
+    font-size:large;
+  }
+  nav a:hover{
+    background-color: #000000;
+    color: aliceblue;
+  }
+  nav li:first-child{
+    margin-right: auto;
+  }
+
+  .logo {
+    height: 40px;
+    width: 200px;
+    vertical-align: middle;
+  }
+
+  .hide-sidebar-btn {
+  color: #dcdcdc;
+  }
+
+  .menu-button svg path {
+  fill: rgb(255, 255, 255); /* Change this to your desired color */
+  }
+
+  .sidebar{
+    position: fixed;
+    top: 0; 
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    background-color: rgb(34, 34, 34);
+    backdrop-filter: blur(50px);
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.656);
+    list-style: none;
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    color: #2d2c2c;
+  }
+  .sidebar li{
+    width: 100%;
+  }
+  .sidebar a{
+    width: 100%;
+  }
+  .menu-button{
+    display: none;
+  }
+
+  
+/* Container for the search box */
+.search-container {
+  display: flex;
+  align-items: center;
+  width: 30%;
+  max-width: 400px;
+  background: rgb(255, 255, 255);
+  border-radius: 25px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  padding-right: 10px;
+}
+
+/* Style for the search input */
+.search-input {
+  flex: 1;
+  border: none;
+  outline: none;
+  padding: 0px 10px 0 20px;
+  font-size: 16px;
+  border-radius: 25px 0 0 25px;
+}
+
+.search-input::placeholder {
+  color: #aaa;
+}
+
+/* Style for the search button */
+.fa-magnifying-glass {
+  font-size: 20px;
+  color: #333;
+  padding: 10px 10px 10px 10px;
+  cursor: pointer;
+  align-items: center;
+  margin-left: 10px;
+}
+
+.fa-magnifying-glass:hover {
+  color: #007bff;
+}
+
+ul li ul.dropdown li {
+  display: block;
+}
+
+ul li ul.dropdown {
+  width: 100%;
+  background: #252526;
+  color: #dcdcdc;
+  position: absolute;
+  z-index: 999;
+  display: none;
+}
+
+ul li a:hover {
+  background: #131214;
+  color: #dcdcdc;
+}
+
+ul li:hover ul.dropdown {
+  display: block;
+
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+}
+
+li.hideOnMobile {
+  margin-right: 10px;
+}
+
+li.hideOnMobile a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+
+li.hideOnMobile a:hover {
+  color: gray;
+}
+
+.hideOnMobile .fa-user-circle  {
+  font-size: 1.4em;
+  margin-left: 5px;
+}
+
+.hideOnMobile .fa-shopping-cart {
+  font-size: 1.2em;
+  margin-left: 5px;
+}
+
+
+
+/* Responsive adjustments for search box */
+@media (max-width: 600px) {
+  .search-container {
+   color: #000;
+
+  }
+  
+  /* Style for the search input */
+  .search-input {
+    flex: 1;
+    border: none;
+    outline: none;
+    padding: 10px 25px;
+    font-size: 16px;
+    border-radius: 25px 0 0 25px;
+  }
+
+  .search-icon {
+    font-size: 18px;
+    padding: 8px;
+    border-radius: 0 25px 25px 0;
+  }
+
+    .logo {
+      height: 25px;
+      width: 120px;
+      vertical-align: middle;
+      margin-left: 0px;
+
+  }
+
+    
+    .sidebar{
+      background-color: #2d2c2c4d;
+  }
+
+  ul li ul.dropdown {
+    width: 100%;
+    background: #252526;
+    position: relative;
+    display: none;
+    z-index: 999;
+  }
+
+  ul li:hover ul.dropdown {
+    display: block;
+  }
+
+  ul li a:hover {
+    background: black;
+  }
+
+  ul li ul.dropdown li {
+    display: block;
+  }
+
+  .sidebar li:hover ul.dropdown {
+    display: block;
+  }
+
+}
+
+  @media(max-width: 800px){
+    .hideOnMobile{
+      display: none;
+    }
+    .menu-button{
+      display: block;
+      color: #dcdcdc;
+    }
+
+    .search-container {
+      max-width: 60%;
+    }
+  
+    .search-input {
+      font-size: 14px;
+      padding: 8px 12px;
+    }
+  
+    .search-icon {
+      font-size: 18px;
+      padding: 8px;
+    }
+
+    ul li ul.dropdown {
+      width: 100%;
+      background: #252526;
+      position: relative;
+      display: none;
+      z-index: 999;
+    }
+  
+    ul li:hover ul.dropdown {
+      display: block;
+    }
+  
+    ul li a:hover {
+      background: black
+    }
+  
+    ul li ul.dropdown li {
+      display: block;
+    }
+  
+    .sidebar li:hover ul.dropdown {
+      display: block;
+    }
+  
+  }
+  @media(max-width: 400px){
+    .sidebar{
+      width: 100%;
+    }
+
+
+  }
